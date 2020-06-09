@@ -119,6 +119,10 @@
           }
         }
       }
-    }},
-  "defaultProject": "angular-pawapuro"
+    }
+  },
+  "defaultProject": "angular-pawapuro",
+  "cli": {
+    "analytics": "c92f40eb-6f4b-4d06-881f-01013b83e614"
+  }
 }
