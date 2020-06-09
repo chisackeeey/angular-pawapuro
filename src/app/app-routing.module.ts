@@ -2,6 +2,7 @@ import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 
 const routes: Routes = [
+  { path: '', redirectTo: 'select-teams', pathMatch: 'full' },
   {
     path: 'select-teams',
     loadChildren: () =>
