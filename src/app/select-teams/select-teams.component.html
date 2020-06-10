@@ -1,3 +1,23 @@
-<nav>
-  <a routerLink="/select-pitcher">進む</a>
-</nav>
+<div class="container">
+  <div class="subContainer">
+    <div class="selectedContainer">
+      <img class="big" [src]="myTeam" />
+    </div>
+    <div class="submitButtonContainer">
+      <a routerLink="/select-pitcher"
+        ><button class="submitButton">決定</button></a
+      >
+    </div>
+    <div class="selectedContainer">
+      <img class="big" [src]="otherTeam" />
+    </div>
+  </div>
+  <div class="optionContainer">
+    <div class="leagueContainer">
+      <img class="small" [src]="path" *ngFor="let path of pacificList" />
+    </div>
+    <div class="leagueContainer">
+      <img class="small" [src]="path" *ngFor="let path of centralList" />
+    </div>
+  </div>
+</div>
