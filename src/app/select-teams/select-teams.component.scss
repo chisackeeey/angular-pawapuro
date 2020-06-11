@@ -10,14 +10,11 @@
   flex-direction: row;
 }
 
-.selectedContainer {
-}
-
 .submitButtonContainer {
   display: flex;
   justify-content: center;
   align-self: flex-end;
-  width: 300px;
+  width: 308px;
   margin-bottom: 30px;
 }
 
@@ -29,9 +26,9 @@
 .optionContainer {
   display: flex;
   flex-direction: column;
-  display: inline-block;
   border: solid 1px;
   border-color: black;
+  margin-top: 20px;
 }
 
 .leagueContainer {
@@ -45,14 +42,14 @@
   border: solid 1px;
   border-color: black;
   margin: 15px;
-}
 
-.small:hover {
-  height: 125px;
-  width: 125px;
-  border: solid 2px;
-  border-color: #0000ff;
-  margin: 10px auto 15px;
+  &:hover {
+    height: 125px;
+    width: 125px;
+    border: solid 2px;
+    border-color: #0000ff;
+    margin: 10px auto;
+  }
 }
 
 .big {
@@ -60,5 +57,4 @@
   width: 300px;
   border: solid 1px;
   border-color: black;
-  margin: 5px;
 }
