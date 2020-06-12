@@ -1,4 +1,39 @@
-<nav>
-  <a routerLink="/select-batter">進む</a>
-  <a routerLink="/select-teams">戻る</a>
-</nav>
+<div class="container">
+  <div class="playerContainer">
+    <div class="starterPlayerContainer">
+      <div class="playerStatus">先発</div>
+      <div class="playerList">
+        <div class="player">{{ starter.name }}</div>
+      </div>
+    </div>
+    <div class="reserverPlayerContainer">
+      <div class="playerStatus">控え</div>
+      <div class="playerList" *ngFor="let reserver of reserverList">
+        <div class="player">{{ reserver.name }}</div>
+      </div>
+    </div>
+    <div class="offPlayerContainer">
+      <div class="playerStatus">オフ</div>
+      <div class="playerList" *ngFor="let off of offList">
+        <div class="player">{{ off.name }}</div>
+      </div>
+    </div>
+  </div>
+  <div class="subContainer">
+    <div class="playerDetailContainer">
+      <div id="player">{{ starter.name }}</div>
+      <div class="parameterContainer">
+        球速: {{ starter.speed }} <br />スタミナ: {{ starter.stamina }}
+        <br />コントロール: {{ starter.control }}
+      </div>
+    </div>
+    <div class="buttonContainer">
+      <div class="submitButtonContainer">
+        <a routerLink="/select-batter"><button class="button">進む</button></a>
+      </div>
+      <div class="backButtonContainer">
+        <a routerLink="/select-teams"><button class="button">戻る</button></a>
+      </div>
+    </div>
+  </div>
+</div>
